@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <mpc.h>
+#include "mpc.h"
 
 #ifdef _WIN32
 #include <string.h>
@@ -69,7 +69,6 @@ int main (int argc, char **argv) {
             mpc_err_delete(r.error);
         }
         // if successful, print and delete AST, else error
-
 
         free(input);
     }
